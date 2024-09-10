@@ -1,8 +1,9 @@
 name = 'victor'
-print(name)
+print('Name:', name)
 age = 44
-print(age)
-age = 15
-print(age)
-is_student = 44 != 15
-print(is_student)
+print('age:', age)
+age = (age + 1)
+new_age = 45
+print('new age', age )
+is_student = new_age == age
+print('Is Student', is_student)
