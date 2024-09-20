@@ -1,6 +1,6 @@
 def send_email(message, recipient, *, sender = "university.help@gmail.com"):
     name_recipient = '@' in recipient and (recipient.endswith('.com') or recipient.endswith('.ru') or recipient.endswith('.net'))
-    name_sender = '@' in recipient and (recipient.endswith('.com') or recipient.endswith('.ru') or recipient.endswith('.net'))
+    name_sender = '@' in sender and (sender.endswith('.com') or sender.endswith('.ru') or sender.endswith('.net'))
     if name_recipient and name_sender:
         if recipient == sender:
             print('Нельзя отправить письмо самому себе!')
